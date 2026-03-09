@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ma Galerie</title>
+</head>
+<body>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background:linear-gradient(90deg, white,darkblue);
+    text-align: center;
+}
+
+header {
+    background:linear-gradient(90deg,yellow,red);
+    color: white;
+    padding: 20px;
+}
+
+h2 {
+    margin: 20px 0;
+    color: #333;
+}
+.photo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    
+}
+
+.photo-container img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer ;
+}
+
+.photo-container img:hover {
+    transform: scale(1.05);
+}
+
+.video-section {
+    padding: 20px;
+}
+
+video {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+ .message {
+            position:relative;
+            top: 70%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #ffd700;
+            font-size:20px;
+            animation: pulse 2s infinite;
+            z-index: 1000;
+            white-space: nowrap;
+            color:black;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity:4; transform: translateX(-50%) scale(1); }
+            50% { opacity: 0.8; transform: translateX(-50%) scale(1.1); }
+        }
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    }
+@media (max-width: 600px) {
+    video {
+        width: 95%;
+    }
+}
+    </style>
+
+    <header>
+        <div class="message">Nos Collection Photos & Vidéos</div>
+    </header>
+
+    <section class="gallery">
+        <h2>Nos collections photos</h2>
+        <div class="photo-container">
+            <div class="rotate">
+            <img src="logo6.jpg" alt="Photo" class="logos">
+            <img src="logo2.jpg" alt="photo">
+            <img src="logo4.jpg" alt="Photo">
+           <img src="logo1.jpg"alt="Photo">
+            <img src="logo8.jpg" alt="photo">
+            <img src="logo01.jpg"alt="Photo">
+            <img src="logo20.jpg" alt="Photo">
+            <img src="logo31.jpg" alt="Photo">
+             <img src="logo32 (1).jpg" alt="Photo">
+             </div>
+             
+            
+        </div>
+                
+    </section>
+
+    
+    <section class="video-section">
+        <h2>Nos Vidéo</h2>
+        <video controls>
+            <source src="bryan a.mp4" type="video/mp4">
+        </video>
+    </section>
+ <section class="video-section">
+        <video controls>
+            <source src="studios.mp4" type="video/mp4">
+           
+        </video>
+    </section>
+
+    <footer>
+        <p>© 2026 - Mon Site Galerie</p>
+    </footer>
+            </div>
+    </div>
+
+ 
+</body>
+</html>
